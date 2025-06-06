@@ -1,0 +1,36 @@
+[project]
+name = "rag_app"
+version = "0.1.0"
+description = "RAG system with chunking and web summarization"
+authors = [
+    { name="Enrique Rojas", email="enriqueirojasv@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "nltk==3.8.1",
+    "tqdm"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "coverage"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools]
+packages = ["rag_app"]
+
+[tool.setuptools.package-data]
+"rag_app" = ["**/*.txt", "**/*.html", "**/*.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["rag_app/tests"]

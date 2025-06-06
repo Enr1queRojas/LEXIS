@@ -1,0 +1,26 @@
+[
+  {
+    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_0",
+    "text": "LexisNexis is a business providing legal and business information, analytics, and technology. Their products include Lexis+ (with Litigation Analytics), Nexis, and law books (sold through their online store). The company uses AI (implied through the mention of \"analytics\" and the presence of search functionality) to enhance its offerings.",
+    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
+    "chunk_index": 0
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_1",
+    "text": "to improve customer workflows and support the rule of law. A search function is prominently featured on the error page.",
+    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
+    "chunk_index": 1
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_0",
+    "text": "LexisNexis is a legal and business information company that combines its data with analytics and technology. Their products include Lexis+ (with Lexis Analytics), Nexis, and law books. They utilize a search function on their site (likely powered by Solr) and have a strong online presence, as evidenced by their social media links. Their strategy appears to involve providing comprehensive legal and business resources, leveraging technology (though specifics of AI application are not explicitly detailed in this HTML) and maintaining a user-friendly interface.",
+    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
+    "chunk_index": 0
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_1",
+    "text": "is primarily for a 404 error page, but the metadata and links reveal information about the company and its products.",
+    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
+    "chunk_index": 1
+  }
+]
