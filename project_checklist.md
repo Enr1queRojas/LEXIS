@@ -28,7 +28,7 @@
 * [ ] Crear `pyproject.toml` limpio y reproducible
 * [ ] Crear `Dockerfile` optimizado (basado en Python slim o similar)
 * [ ] Crear `.dockerignore`
-* [ ] Agregar `entrypoint.sh` (si es últil para inicialización)
+* [ ] Agregar `entrypoint.sh` (si es útil para inicialización)
 * [ ] Probar build de Docker e iniciar contenedor correctamente
 * [ ] Probar contenedor desde otra máquina (usuario final sin dev tools)
 
