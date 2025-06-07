@@ -22,5 +22,11 @@
     "text": "is primarily for a 404 error page, but the metadata and links reveal information about the company and its products.",
     "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
     "chunk_index": 1
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_0",
+    "text": "LexisNexis is a company that provides legal and business information, analytics, and technology. Their products include Lexis+ (with Litigation Analytics), Nexis, and law books. They utilize a search function (likely powered by an API, judging by the `/api/search` endpoint) on their website. The company's strategy involves combining information with technology to improve customer workflows and support the rule of law. While the provided HTML doesn't detail specific AI applications, the mention of \"analytics\" suggests potential AI-driven features within their products. Their website uses various tracking and analytics technologies from Google, Matomo and others.",
+    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
+    "chunk_index": 0
   }
 ]
