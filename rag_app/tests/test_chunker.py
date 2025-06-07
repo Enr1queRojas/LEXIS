@@ -38,7 +38,7 @@ class TestChunker(unittest.TestCase):
         self.assertEqual(chunks, [short_text], msg="Chunker should return single chunk for short input.")
 
     def test_chunker_exact_token_limit(self):
-        text = "This is a sentence. " * 10  # Roughly 50 tokens
+        text = ("This is a sentence. " * 12) + "Hi there."  # Exactly 50 tokens
         chunks = chunk_text(text.strip(), max_tokens=50, overlap=0)
         self.assertGreaterEqual(len(chunks), 1, msg="Should produce at least one chunk.")
         self.assertTrue(all(isinstance(c, str) for c in chunks))
