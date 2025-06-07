@@ -2,7 +2,7 @@
 
 import os
 import logging
-from typing import List
+from typing import List, Optional
 import google.generativeai as genai
 from dotenv import load_dotenv
 
@@ -22,13 +22,10 @@ genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 
-def generate_answer(query: str, context_chunks: List[str]) -> str:
-    """
-    Utiliza Gemini para responder una pregunta usando contexto proporcionado.
-    """
+def generate_answer(query: str, chunks: List[str], system_prompt: Optional[str] = None) -> str:
     logger.info(f"🤖 Generating answer with Gemini for query: '{query}'")
 
-    context = "\n\n".join(context_chunks)
+    context = "\n\n".join(chunks)
     prompt = f"""You are a helpful assistant. Use the following context to answer the question.
 
     CONTEXT:
