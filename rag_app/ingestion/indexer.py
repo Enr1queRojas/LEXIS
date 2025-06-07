@@ -50,11 +50,13 @@ collection = _chroma_client.get_or_create_collection(
 
 def index_url(
     url: str,
+    title: Optional[str] = None,  # <-- nuevo parámetro
     collection_name: str = collection_name_default,
     max_tokens: int = 100,
     overlap: int = 20,
     persist: bool = True
 ) -> List[str]:
+
     logger.info(f"🌐 Summarizing content from: {url}")
     summary = summarize_html_with_ai(url)
     if not summary.strip():
@@ -80,15 +82,21 @@ def index_url(
             documents=[chunk],
             embeddings=[embedding.tolist()],
             ids=[doc_id],
-            metadatas=[{"source": url, "chunk_index": i}]
+            metadatas=[{
+                "source": url,
+                "chunk_index": i,
+                "title": title or ""  
+            }]
         )
-        doc_ids.append(doc_id)
+
         documents_to_save.append({
             "id": doc_id,
             "text": chunk,
             "source": url,
-            "chunk_index": i
+            "chunk_index": i,
+            "title": title or ""
         })
+        doc_ids.append(doc_id)
 
     if persist:
         if not documents_to_save:
@@ -127,7 +135,25 @@ def query_index(query: str, top_k: int = 5) -> List[str]:
     results = collection.query(query_texts=[query], n_results=top_k)
     return results["documents"][0] if results["documents"] else []
 
-if __name__ == "__main__":
+def index_from_url_list(file_path: Path = Path("rag_app/data/url_index.json")):
+    if not file_path.exists():
+        logger.error(f"❌ URL list file not found: {file_path}")
+        return
 
-    url = "https://www.lexisnexis.com/en-us/about-us/innovation.page"
-    index_url(url=url, max_tokens=50, overlap=10)
+    with open(file_path, "r", encoding="utf-8") as f:
+        url_data = json.load(f)
+
+    logger.info(f"🌍 Indexing {len(url_data)} URLs from {file_path}...")
+    for entry in url_data:
+        url = entry["url"]
+        title = entry.get("title", "")
+        try:
+            logger.info(f"🔗 Indexing: {url}")
+            index_url(url, title=title, persist=True)
+
+        except Exception as e:
+            logger.warning(f"⚠️ Skipped {url}: {e}")
+
+
+if __name__ == "__main__":
+    index_from_url_list()
