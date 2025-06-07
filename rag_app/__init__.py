@@ -1,5 +1,3 @@
 """LEXIS RAG package."""
 
-from .app.main import app
-
-__all__ = ["app"]
+# The FastAPI application lives in :mod:`rag_app.app.main`.
