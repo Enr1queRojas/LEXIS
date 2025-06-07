@@ -19,7 +19,7 @@ def clean_text(text: str) -> str:
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
-def chunk_text(text: str, max_tokens: int = 100, overlap: int = 20) -> List[str]:
+def chunk_text(text: str, max_tokens: int = 1000, overlap: int = 20) -> List[str]:
     """
     Splits text into chunks based on sentence boundaries, with optional overlap.
 
