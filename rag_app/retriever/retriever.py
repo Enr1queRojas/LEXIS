@@ -35,12 +35,13 @@ def retrieve_relevant_chunks(query: str, top_k: int = 10, threshold: float = 0.5
     documents = results.get("documents", [[]])[0]
     distances = results.get("distances", [[]])[0]
 
-    logger.info("📊 Similarities returned:")
-    for i, (doc, score) in enumerate(zip(documents, distances)):
-        logger.info(f"   - Chunk {i}: score={score:.4f} | preview={doc[:60]}")
+    logger.info("📊 Distances returned:")
+    for i, (doc, dist) in enumerate(zip(documents, distances)):
+        logger.info(f"   - Chunk {i}: distance={dist:.4f} | preview={doc[:60]}")
 
+    similarities = [1 - d for d in distances]
     filtered_chunks = [
-        doc for doc, score in zip(documents, distances) if score >= threshold
+        doc for doc, sim in zip(documents, similarities) if sim >= threshold
     ]
 
     logger.info(f"✅ Filtered {len(filtered_chunks)} relevant chunks (threshold: {threshold})")
