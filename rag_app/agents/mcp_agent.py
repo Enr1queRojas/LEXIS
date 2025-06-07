@@ -10,8 +10,7 @@ def answer_with_mcp(query: str) -> str:
     """
     logger.info("🧠 No relevant chunks found — triggering MCP agent.")
     
-    # Puedes mandar solo el query o envolverlo en una instrucción especial
-    answer = generate_answer(query=query, chunks=[])
+    answer = generate_answer(query=query, context_chunks=[])
     
     logger.info("✅ MCP agent generated a fallback answer.")
     return answer
