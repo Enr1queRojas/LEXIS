@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from rag_app.ingestion import indexer
 
-DOCUMENTS_PATH = Path("data/documents.json")
+DOCUMENTS_PATH = Path("rag_app/data/documents.json")
 
 class TestIndexer(unittest.TestCase):
 
