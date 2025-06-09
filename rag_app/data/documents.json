@@ -40,5 +40,17 @@
     "text": "The provided context does not contain any information about AI tools offered by LexisNexis.  Therefore, I cannot answer your question.",
     "source": "MCP",
     "chunk_index": 0
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_0",
+    "text": "LexisNexis is a business providing legal and business information, analytics, and technology. Their products include Lexis+ (with Litigation Analytics), Nexis, and law books (sold through their online store). The website uses AI for search functionality (indicated by the presence of a search bar connecting to an API endpoint at `https://advance.lexis.com/api/search`). Their strategy appears to be combining legal and business information with technology to improve customer workflows and strengthen the rule of law. The company utilizes various analytics platforms including Matomo.",
+    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
+    "chunk_index": 0
+  },
+  {
+    "id": "mcp__fallback__-3169695771608755573",
+    "text": "The provided context does not contain any information about AI tools offered by LexisNexis.  Therefore, I cannot answer your question.",
+    "source": "MCP",
+    "chunk_index": 0
   }
 ]
