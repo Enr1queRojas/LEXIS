@@ -1,43 +1,34 @@
 [
   {
-    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_0",
-    "text": "LexisNexis is a business providing legal and business information, analytics, and technology. Their products include Lexis+ (with Litigation Analytics), Nexis, and law books (sold through their online store). The company uses AI (implied through the mention of \"analytics\" and the presence of search functionality) to enhance its offerings.",
-    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
-    "chunk_index": 0
-  },
-  {
-    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_1",
-    "text": "to improve customer workflows and support the rule of law. A search function is prominently featured on the error page.",
-    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
-    "chunk_index": 1
+    "id": "https://www.lexisnexis.com/en-us/about-us__chunk_0",
+    "text": "LexisNexis is a business providing legal and business information, analytics, and technology. Their key products include Lexis+®, Lexis Analytics®, and Nexis®. They also offer law books through their online store. The website uses AI-powered search functionality (evident in the search bar and associated JavaScript files), although the specific AI applications aren't detailed. Their strategy appears to involve integrating legal and business information with technology to improve customer workflows and support the rule of law. The site includes links to contact information and social media.",
+    "source": "https://www.lexisnexis.com/en-us/about-us",
+    "chunk_index": 0,
+    "title": "About LexisNexis"
   },
   {
     "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_0",
-    "text": "LexisNexis is a legal and business information company that combines its data with analytics and technology. Their products include Lexis+ (with Lexis Analytics), Nexis, and law books. They utilize a search function on their site (likely powered by Solr) and have a strong online presence, as evidenced by their social media links. Their strategy appears to involve providing comprehensive legal and business resources, leveraging technology (though specifics of AI application are not explicitly detailed in this HTML) and maintaining a user-friendly interface.",
+    "text": "LexisNexis is a business providing legal and business information, analytics, and technology. Their products include Lexis+ (with Litigation Analytics), Nexis, and law books sold through their online store. The company uses AI (implied by the mention of \"analytics\" and the nature of their data products) to enhance its offerings. Their strategy involves combining information with technology to improve customer workflows and strengthen the rule of law. A search functionality is prominent on their website.",
     "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
-    "chunk_index": 0
+    "chunk_index": 0,
+    "title": "LexisNexis Innovation"
   },
   {
-    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_1",
-    "text": "is primarily for a 404 error page, but the metadata and links reveal information about the company and its products.",
-    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
-    "chunk_index": 1
+    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_0",
+    "text": "LexisNexis offers Lexis+ AI, a legal research platform and AI assistant. The product integrates AI (Prot&eacute;g&eacute;) with LexisNexis content to help legal professionals make faster, informed decisions and produce high-quality work. Key features include AI-powered legal document drafting (full documents, motions, complaints, correspondence), drafting from firm knowledge via DMS integration, and personalized document creation. A Forrester study commissioned by LexisNexis showed a 344% ROI for large law firms using Lexis+ AI. The platform targets legal professionals and offers a free trial. The business strategy focuses on improving efficiency and driving value through AI-enhanced legal research and drafting capabilities.",
+    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+    "chunk_index": 0,
+    "title": "Lexis+ AI Product"
   },
   {
-    "id": "https://www.lexisnexis.com/en-us/about-us/innovation.page__chunk_0",
-    "text": "LexisNexis is a company that provides legal and business information, analytics, and technology. Their products include Lexis+ (with Litigation Analytics), Nexis, and law books. They utilize a search function (likely powered by an API, judging by the `/api/search` endpoint) on their website. The company's strategy involves combining information with technology to improve customer workflows and support the rule of law. While the provided HTML doesn't detail specific AI applications, the mention of \"analytics\" suggests potential AI-driven features within their products. Their website uses various tracking and analytics technologies from Google, Matomo and others.",
-    "source": "https://www.lexisnexis.com/en-us/about-us/innovation.page",
-    "chunk_index": 0
-  },
-  {
-    "id": "mcp__fallback__-90750186743005459",
-    "text": "The provided context does not contain any information about AI tools offered by LexisNexis.  Therefore, I cannot answer your question.",
+    "id": "mcp__fallback__-8187958122575306697",
+    "text": "I am sorry, but there is no information about Lexis+ AI or its features in the provided context.  Therefore, I cannot answer your question.",
     "source": "MCP",
     "chunk_index": 0
   },
   {
-    "id": "mcp__fallback__-90750186743005459",
-    "text": "The provided context does not contain any information about AI tools offered by LexisNexis.  Therefore, I cannot answer your question.",
+    "id": "mcp__fallback__-2433996431369454438",
+    "text": "The provided context does not contain any information about Lexis+ AI or its features for law firms.  Therefore, I cannot answer your question.",
     "source": "MCP",
     "chunk_index": 0
   }
