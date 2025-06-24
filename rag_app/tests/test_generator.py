@@ -51,5 +51,20 @@ class TestGenerator(unittest.TestCase):
 
         self.assertEqual(answer, "Mocked answer")
 
+    def test_generate_answer_with_system_prompt(self):
+        query = "What is LexisNexis known for?"
+        context = ["LexisNexis provides legal information."]
+        system_prompt = "Answer in pirate style."
+
+        mock_response = MagicMock()
+        mock_response.text = "Arr! Mocked answer"
+
+        with patch.object(generator.model, "generate_content", return_value=mock_response) as mock_generate:
+            answer = generator.generate_answer(query, context, system_prompt=system_prompt)
+
+        called_prompt = mock_generate.call_args[0][0]
+        self.assertTrue(called_prompt.startswith(system_prompt))
+        self.assertEqual(answer, "Arr! Mocked answer")
+
 if __name__ == "__main__":
     unittest.main()
