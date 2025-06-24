@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 _embedder = Embedder()
 
-def retrieve_relevant_chunks(query: str, top_k: int = 5) -> List[str]:
+def retrieve_relevant_chunks(query: str, top_k: int = 10, threshold: float = 0.0) -> List[str]:
     """
     Retrieve the most relevant chunks from the index based on a query.
 

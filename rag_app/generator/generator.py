@@ -1,24 +1,13 @@
 # rag_app/generator/generator.py
 
-import os
 import logging
 from typing import List, Optional
 import google.generativeai as genai
-from dotenv import load_dotenv
+from rag_app.utils.config import * 
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-load_dotenv()
-
-# Cargar API Key desde entorno
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-if not GEMINI_API_KEY:
-    raise EnvironmentError("❌ Environment variable 'GEMINI_API_KEY' is not set.")
-
-# Configurar el cliente de Gemini
-genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 

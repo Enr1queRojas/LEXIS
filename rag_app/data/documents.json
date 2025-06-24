@@ -52,5 +52,23 @@
     "text": "The provided context does not contain any information about AI tools offered by LexisNexis.  Therefore, I cannot answer your question.",
     "source": "MCP",
     "chunk_index": 0
+  },
+  {
+    "id": "mcp__fallback__-2972910214550759260",
+    "text": "The provided context does not contain any information about what AI tools LexisNexis offers.  Therefore, I cannot answer your question using the given context.",
+    "source": "MCP",
+    "chunk_index": 0
+  },
+  {
+    "id": "mcp__fallback__-7394854018832121681",
+    "text": "The provided context does not contain any information about AI tools offered by LexisNexis.  Therefore, I cannot answer your question using the given context.",
+    "source": "MCP",
+    "chunk_index": 0
+  },
+  {
+    "id": "mcp__fallback__1646380245209884427",
+    "text": "LexisNexis offers various AI-powered tools, including those for legal research,  due diligence,  compliance, and risk management.  Specific tool names aren't consistently publicized, but they generally involve machine learning for tasks like document review, predictive coding, and analysis of large datasets.",
+    "source": "MCP",
+    "chunk_index": 0
   }
 ]
