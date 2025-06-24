@@ -1,11 +1,10 @@
 import requests
 import google.generativeai as genai
-import os
+from rag_app.utils.config import *  # Esto carga GOOGLE_API_KEY y configura genai automáticamente
 from typing import Dict
 
 # Configure Gemini
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key=GEMINI_API_KEY)
+
 gemini_model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 # Cache for previously scraped URLs
