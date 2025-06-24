@@ -35,6 +35,9 @@ def generate_answer(query: str, chunks: List[str], system_prompt: Optional[str] 
     {query}
     """
 
+    if system_prompt:
+        prompt = f"{system_prompt}\n\n{prompt}"
+
     try:
         response = model.generate_content(prompt)
         answer = response.text.strip()
