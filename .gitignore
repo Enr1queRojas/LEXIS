@@ -1,2 +1,12 @@
-# Ignorar entorno virtual
+# Ignorar entorno virtual si se llama "LEXIS"
 LEXIS/
+
+# Ignorar variables de entorno
+.env
+
+# (Opcional) Ignorar entorno de VSCode
+.vscode/
+
+# (Opcional) Ignorar carpetas de Python
+__pycache__/
+*.pyc
