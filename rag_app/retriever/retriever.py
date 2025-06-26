@@ -5,6 +5,7 @@ from rag_app.ingestion.embedder import Embedder
 from rag_app.ingestion.indexer import get_collection
 
 
+
 logger = logging.getLogger(__name__)
 
 _embedder = Embedder()

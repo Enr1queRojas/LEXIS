@@ -4,6 +4,8 @@ import logging
 from typing import List, Optional
 import google.generativeai as genai
 from rag_app.utils.config import * 
+from rag_app.utils.cache import get_from_cache, save_to_cache
+import openai
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)

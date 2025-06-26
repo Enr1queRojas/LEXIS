@@ -1,31 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>LEXIS RAG Demo</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 2em; }
-        #response { margin-top: 1em; white-space: pre-wrap; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lexis RAG Assistant</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 1em 2em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      color: #E60028;
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 2em;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 1em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 1em;
+    }
+
+    button {
+      background-color: #E60028;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c00022;
+    }
+
+    #response {
+      margin-top: 2em;
+      white-space: pre-wrap;
+      font-size: 1em;
+      color: #333;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(0, 0, 0, 0.2);
+      border-top: 3px solid #000;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .fallback-box {
+      border: 1px solid #2196F3;
+      background-color: #E3F2FD;
+      padding: 1em;
+      border-radius: 8px;
+      color: #0D47A1;
+    }
+  </style>
 </head>
 <body>
-    <h1>LEXIS RAG Demo</h1>
-    <input type="text" id="query" placeholder="Ask a question" size="50" />
+  <header>
+    <h1>LexisNexis® AI Assistant</h1>
+  </header>
+
+  <main>
+    <input type="text" id="query" placeholder="Ask a question about LexisNexis products..." />
     <button onclick="ask()">Ask</button>
     <div id="response"></div>
-    <script>
-        async function ask() {
-            const query = document.getElementById('query').value;
-            const respDiv = document.getElementById('response');
-            respDiv.textContent = 'Loading...';
-            const res = await fetch('/ask', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ query })
-            });
-            const data = await res.json();
-            respDiv.textContent = data.answer || 'No answer';
-        }
-    </script>
+  </main>
+
+  <script>
+    async function ask() {
+      const query = document.getElementById('query').value;
+      const respDiv = document.getElementById('response');
+      respDiv.innerHTML = '🔎 Searching knowledge base...';
+
+      const res = await fetch('/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query })
+      });
+
+      const data = await res.json();
+
+      if (data.answer && data.answer.startsWith("🔄 Updating knowledge base")) {
+        respDiv.innerHTML = '🧠 No context found. Updating knowledge base...';
+
+        setTimeout(async () => {
+          respDiv.innerHTML = '⌛ Generating answer... <span class="spinner"></span>';
+
+          const followUp = await fetch('/ask', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query })
+          });
+
+          const final = await followUp.json();
+          showAnswer(final.answer, respDiv);
+        }, 3000);
+      } else {
+        showAnswer(data.answer, respDiv);
+      }
+    }
+
+    function showAnswer(answer, container) {
+      if (!answer) {
+        container.textContent = '⚠️ No answer available.';
+      } else if (answer.startsWith("📘 This topic")) {
+        container.innerHTML = `<div class="fallback-box">${answer}</div>`;
+      } else {
+        container.textContent = answer;
+      }
+    }
+  </script>
 </body>
 </html>
