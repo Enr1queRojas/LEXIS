@@ -126,48 +126,6 @@
     }
   },
   {
-    "id": "https://www.lexisnexis.com/en-us/home.page__chunk_0",
-    "text": "Error scraping https://www.lexisnexis.com/en-us/home.page: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations { quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\" quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\" quota_dimensions { key: \"model\" value: \"gemini-1.5-flash\" } quota_dimensions { key: \"location\" value: \"global\" } quota_value: 50 } , links { description: \"Learn more about Gemini API quotas\" url: \"https://ai.google.dev/gemini-api/docs/rate-limits\" } , retry_delay { seconds: 39 } ]",
-    "source": "https://www.lexisnexis.com/en-us/home.page",
-    "chunk_index": 0,
-    "metadata": {
-      "source": "https://www.lexisnexis.com/en-us/home.page",
-      "chunk_index": 0,
-      "title": "An error occurred while generating the answer.",
-      "product": "An error occurred while generating the answer.",
-      "contains_ai": true,
-      "keywords": "An error occurred while generating the answer"
-    }
-  },
-  {
-    "id": "https://www.lexisnexis.com/en-us/home.page__chunk_1",
-    "text": "For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations { quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\" quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\" quota_dimensions { key: \"model\" value: \"gemini-1.5-flash\" } quota_dimensions { key: \"location\" value: \"global\" } quota_value: 50 } , links { description: \"Learn more about Gemini API quotas\" url: \"https://ai.google.dev/gemini-api/docs/rate-limits\" } , retry_delay { seconds: 39 } ]",
-    "source": "https://www.lexisnexis.com/en-us/home.page",
-    "chunk_index": 1,
-    "metadata": {
-      "source": "https://www.lexisnexis.com/en-us/home.page",
-      "chunk_index": 1,
-      "title": "An error occurred while generating the answer.",
-      "product": "An error occurred while generating the answer.",
-      "contains_ai": true,
-      "keywords": "An error occurred while generating the answer"
-    }
-  },
-  {
-    "id": "https://www.lexisnexis.com/en-us/home.page__chunk_2",
-    "text": "[violations { quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\" quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\" quota_dimensions { key: \"model\" value: \"gemini-1.5-flash\" } quota_dimensions { key: \"location\" value: \"global\" } quota_value: 50 } , links { description: \"Learn more about Gemini API quotas\" url: \"https://ai.google.dev/gemini-api/docs/rate-limits\" } , retry_delay { seconds: 39 } ]",
-    "source": "https://www.lexisnexis.com/en-us/home.page",
-    "chunk_index": 2,
-    "metadata": {
-      "source": "https://www.lexisnexis.com/en-us/home.page",
-      "chunk_index": 2,
-      "title": "An error occurred while generating the answer.",
-      "product": "An error occurred while generating the answer.",
-      "contains_ai": true,
-      "keywords": "An error occurred while generating the answer"
-    }
-  },
-  {
     "id": "mcp__fallback__5714331226118790767",
     "text": "An error occurred while generating the answer.",
     "source": "MCP",
@@ -178,48 +136,6 @@
     "text": "An error occurred while generating the answer.",
     "source": "MCP",
     "chunk_index": 0
-  },
-  {
-    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_0",
-    "text": "Error scraping https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations { quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\" quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\" quota_dimensions { key: \"model\" value: \"gemini-1.5-flash\" } quota_dimensions { key: \"location\" value: \"global\" } quota_value: 50 } , links { description: \"Learn more about Gemini API quotas\" url: \"https://ai.google.dev/gemini-api/docs/rate-limits\" } , retry_delay { seconds: 9 } ]",
-    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
-    "chunk_index": 0,
-    "metadata": {
-      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
-      "chunk_index": 0,
-      "title": "Error: Exceeded Quota on Lexis Plus AI Page",
-      "product": "Error: Exceeded Quota on Lexis Plus AI Page",
-      "contains_ai": true,
-      "keywords": "1. Error scraping\n2. Quota exceeded\n3. Billing details\n4. Gemini API\n5. Rate limits\n6. Retry delay"
-    }
-  },
-  {
-    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_1",
-    "text": "For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations { quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\" quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\" quota_dimensions { key: \"model\" value: \"gemini-1.5-flash\" } quota_dimensions { key: \"location\" value: \"global\" } quota_value: 50 } , links { description: \"Learn more about Gemini API quotas\" url: \"https://ai.google.dev/gemini-api/docs/rate-limits\" } , retry_delay { seconds: 9 } ]",
-    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
-    "chunk_index": 1,
-    "metadata": {
-      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
-      "chunk_index": 1,
-      "title": "Error: Exceeded Quota on Lexis Plus AI Page",
-      "product": "Error: Exceeded Quota on Lexis Plus AI Page",
-      "contains_ai": true,
-      "keywords": "1. Error scraping\n2. Quota exceeded\n3. Billing details\n4. Gemini API\n5. Rate limits\n6. Retry delay"
-    }
-  },
-  {
-    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_2",
-    "text": "[violations { quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\" quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\" quota_dimensions { key: \"model\" value: \"gemini-1.5-flash\" } quota_dimensions { key: \"location\" value: \"global\" } quota_value: 50 } , links { description: \"Learn more about Gemini API quotas\" url: \"https://ai.google.dev/gemini-api/docs/rate-limits\" } , retry_delay { seconds: 9 } ]",
-    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
-    "chunk_index": 2,
-    "metadata": {
-      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
-      "chunk_index": 2,
-      "title": "Error: Exceeded Quota on Lexis Plus AI Page",
-      "product": "Error: Exceeded Quota on Lexis Plus AI Page",
-      "contains_ai": true,
-      "keywords": "1. Error scraping\n2. Quota exceeded\n3. Billing details\n4. Gemini API\n5. Rate limits\n6. Retry delay"
-    }
   },
   {
     "id": "mcp__fallback__-1630179453481481608",
@@ -238,5 +154,159 @@
     "text": "An error occurred while generating the answer.",
     "source": "MCP",
     "chunk_index": 0
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_0",
+    "text": "LexisNexis offers Lexis+ AI, a legal research platform integrated with an AI assistant (Protégé). This product helps legal professionals draft, summarize, analyze, and respond to legal matters, acting like a trusted colleague. It combines LexisNexis's authoritative content with AI capabilities for faster, informed decision-making and improved work quality. A Forrester Consulting study commissioned by LexisNexis found a 284% ROI for corporate legal departments using Lexis+ AI. The platform offers features like AI-powered legal drafting for various document types (including transactional documents and litigation materials), and personalized document generation.",
+    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+    "chunk_index": 0,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+      "chunk_index": 0,
+      "title": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "product": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Lexis+ AI, Legal Research, AI Assistant, Document Drafting, ROI"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_1",
+    "text": "This product helps legal professionals draft, summarize, analyze, and respond to legal matters, acting like a trusted colleague. It combines LexisNexis's authoritative content with AI capabilities for faster, informed decision-making and improved work quality. A Forrester Consulting study commissioned by LexisNexis found a 284% ROI for corporate legal departments using Lexis+ AI. The platform offers features like AI-powered legal drafting for various document types (including transactional documents and litigation materials), and personalized document generation. Lexis+ AI aims to improve efficiency and deliver business value for corporate legal departments and law firms.",
+    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+    "chunk_index": 1,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+      "chunk_index": 1,
+      "title": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "product": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Lexis+ AI, Legal Research, AI Assistant, Document Drafting, ROI"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_2",
+    "text": "It combines LexisNexis's authoritative content with AI capabilities for faster, informed decision-making and improved work quality. A Forrester Consulting study commissioned by LexisNexis found a 284% ROI for corporate legal departments using Lexis+ AI. The platform offers features like AI-powered legal drafting for various document types (including transactional documents and litigation materials), and personalized document generation. Lexis+ AI aims to improve efficiency and deliver business value for corporate legal departments and law firms. ROI studies are available for both corporate legal departments and large law firms.",
+    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+    "chunk_index": 2,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+      "chunk_index": 2,
+      "title": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "product": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Lexis+ AI, Legal Research, AI Assistant, Document Drafting, ROI"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_3",
+    "text": "A Forrester Consulting study commissioned by LexisNexis found a 284% ROI for corporate legal departments using Lexis+ AI. The platform offers features like AI-powered legal drafting for various document types (including transactional documents and litigation materials), and personalized document generation. Lexis+ AI aims to improve efficiency and deliver business value for corporate legal departments and law firms. ROI studies are available for both corporate legal departments and large law firms.",
+    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+    "chunk_index": 3,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+      "chunk_index": 3,
+      "title": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "product": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Lexis+ AI, Legal Research, AI Assistant, Document Drafting, ROI"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_4",
+    "text": "The platform offers features like AI-powered legal drafting for various document types (including transactional documents and litigation materials), and personalized document generation. Lexis+ AI aims to improve efficiency and deliver business value for corporate legal departments and law firms. ROI studies are available for both corporate legal departments and large law firms.",
+    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+    "chunk_index": 4,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+      "chunk_index": 4,
+      "title": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "product": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Lexis+ AI, Legal Research, AI Assistant, Document Drafting, ROI"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page__chunk_5",
+    "text": "Lexis+ AI aims to improve efficiency and deliver business value for corporate legal departments and law firms. ROI studies are available for both corporate legal departments and large law firms.",
+    "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+    "chunk_index": 5,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page",
+      "chunk_index": 5,
+      "title": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "product": "Lexis+ AI: AI-Powered Legal Research & Drafting Platform",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Lexis+ AI, Legal Research, AI Assistant, Document Drafting, ROI"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/home.page__chunk_0",
+    "text": "LexisNexis Legal & Professional offers legal AI and business intelligence solutions. Their flagship product, Lexis+ AI, features Protégé, a personalized AI-powered assistant designed to boost productivity and work quality for legal and business professionals. Protégé is integrated into Lexis+ AI and Lexis Create+. The AI capabilities include conversational legal search, rapid document drafting, accurate summarization, and document upload with key insight extraction. The company's strategy involves providing trusted insights and analytics to empower legal research, compliance, and decision-making. Free trials are offered for Lexis+ AI.",
+    "source": "https://www.lexisnexis.com/en-us/home.page",
+    "chunk_index": 0,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/home.page",
+      "chunk_index": 0,
+      "title": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "product": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Legal AI, Protégé, Document Drafting, Legal Search, Compliance"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/home.page__chunk_1",
+    "text": "Their flagship product, Lexis+ AI, features Protégé, a personalized AI-powered assistant designed to boost productivity and work quality for legal and business professionals. Protégé is integrated into Lexis+ AI and Lexis Create+. The AI capabilities include conversational legal search, rapid document drafting, accurate summarization, and document upload with key insight extraction. The company's strategy involves providing trusted insights and analytics to empower legal research, compliance, and decision-making. Free trials are offered for Lexis+ AI.",
+    "source": "https://www.lexisnexis.com/en-us/home.page",
+    "chunk_index": 1,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/home.page",
+      "chunk_index": 1,
+      "title": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "product": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Legal AI, Protégé, Document Drafting, Legal Search, Compliance"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/home.page__chunk_2",
+    "text": "Protégé is integrated into Lexis+ AI and Lexis Create+. The AI capabilities include conversational legal search, rapid document drafting, accurate summarization, and document upload with key insight extraction. The company's strategy involves providing trusted insights and analytics to empower legal research, compliance, and decision-making. Free trials are offered for Lexis+ AI.",
+    "source": "https://www.lexisnexis.com/en-us/home.page",
+    "chunk_index": 2,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/home.page",
+      "chunk_index": 2,
+      "title": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "product": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Legal AI, Protégé, Document Drafting, Legal Search, Compliance"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/home.page__chunk_3",
+    "text": "The AI capabilities include conversational legal search, rapid document drafting, accurate summarization, and document upload with key insight extraction. The company's strategy involves providing trusted insights and analytics to empower legal research, compliance, and decision-making. Free trials are offered for Lexis+ AI.",
+    "source": "https://www.lexisnexis.com/en-us/home.page",
+    "chunk_index": 3,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/home.page",
+      "chunk_index": 3,
+      "title": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "product": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Legal AI, Protégé, Document Drafting, Legal Search, Compliance"
+    }
+  },
+  {
+    "id": "https://www.lexisnexis.com/en-us/home.page__chunk_4",
+    "text": "The company's strategy involves providing trusted insights and analytics to empower legal research, compliance, and decision-making. Free trials are offered for Lexis+ AI.",
+    "source": "https://www.lexisnexis.com/en-us/home.page",
+    "chunk_index": 4,
+    "metadata": {
+      "source": "https://www.lexisnexis.com/en-us/home.page",
+      "chunk_index": 4,
+      "title": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "product": "Lexis+ AI Protégé: AI-Powered Legal Assistant",
+      "contains_ai": true,
+      "keywords": "LexisNexis, Legal AI, Protégé, Document Drafting, Legal Search, Compliance"
+    }
   }
 ]
